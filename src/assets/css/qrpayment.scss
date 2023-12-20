@@ -1,0 +1,114 @@
+.qr-payment {
+  display: flex;
+  justify-content: center;
+
+  .box-qr {
+    .img-header {
+      .hexagon-box {
+        position: relative;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+      }
+
+      .hexagon-img {
+        position: absolute;
+        width: 100%;
+        padding-bottom: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        clip-path: polygon(
+          30% 0%,
+          70% 0%,
+          100% 30%,
+          100% 70%,
+          70% 100%,
+          30% 100%,
+          0% 70%,
+          0% 30%
+        );
+      }
+
+      .text-payment {
+        text-align: center;
+        margin: 20px 0px;
+      }
+    }
+
+    .timeout-payment {
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid gray;
+      padding: 15px;
+      max-width: 150px;
+      margin: auto;
+
+      .text-time {
+        color: #36B7E6;
+      }
+    }
+
+    .box-qr-code {
+      text-align: center;
+
+      .qr-code {
+        width: 200px;
+      }
+
+      .box-payment-channel {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 10px;
+
+        .icon-payment-channel {
+          width: 25px;
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+
+    .box-save-qr {
+      padding: 20px 0px;
+      text-align: center;
+
+      .btn-save-qr {
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+        max-width: 300px;
+        color: white;
+        background-color: #2D315B;
+        border: none;
+      }
+    }
+
+    .how-to-pay {
+      text-align: center;
+
+      .box-img {
+        display: flex;
+        margin: 10px 0px;
+        justify-content: center;
+        gap: 10px;
+
+        .icon-howtopay {
+          width: 30px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// ! OVERRIDE
+
+.g-text {
+  &.margin-bt {
+    margin-bottom: 20px;
+  }
+}

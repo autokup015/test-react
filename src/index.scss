@@ -1,0 +1,59 @@
+@import "./assets/css/custom.css";
+
+#root {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.g-container {
+  max-width: 1280px;
+  padding: 0px 20px;
+  min-height: calc(100vh - 153px);
+  margin: auto;
+}
+
+// ! TEXT
+
+.g-text {
+  &.gray {
+    opacity: 0.4;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.pointer {
+    cursor: pointer;
+  }
+
+  &.red {
+    color: red;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// ! FORM INPUT
+
+.g-form {
+  .input {
+    border-radius: 0px !important;
+  }
+}

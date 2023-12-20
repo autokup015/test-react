@@ -1,0 +1,134 @@
+.box-menu {
+  .list-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+
+    &.active {
+      border-color: #406aa8;
+      color: #406aa8;
+    }
+
+    .detail-menu {
+      display: flex;
+
+      .icon-menu {
+        width: 20px;
+        height: 20px;
+      }
+
+      .type-menu {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.box-payment {
+  padding: 10px;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &.active {
+    border-color: #406aa8;
+  }
+
+  .detail-payment {
+    display: flex;
+    justify-content: space-between;
+
+    .space-payment {
+      width: 100%;
+      padding: 0px 10px;
+    }
+
+    .active-border-right {
+      border-right: 1px solid darkgray;
+    }
+
+    .name-payment {
+      display: flex;
+      align-items: center;
+
+      .hexagon-box {
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+
+      .hexagon-img {
+        position: absolute;
+        width: 100%;
+        padding-bottom: 115%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        clip-path: polygon(
+          30% 0%,
+          70% 0%,
+          100% 30%,
+          100% 70%,
+          70% 100%,
+          30% 100%,
+          0% 70%,
+          0% 30%
+        );
+      }
+
+      .img-type {
+        width: 25px;
+        height: 25px;
+
+        clip-path: polygon(
+          30% 0%,
+          70% 0%,
+          100% 30%,
+          100% 70%,
+          70% 100%,
+          30% 100%,
+          0% 70%,
+          0% 30%
+        );
+      }
+
+      .text-type {
+        margin-left: 10px;
+      }
+    }
+    .chanel-payment {
+      display: flex;
+      align-items: center;
+
+      .input-select {
+        border-bottom: 1px solid black;
+        width: 100%;
+      }
+    }
+    .price-payment {
+      .price-right {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.footer-payment {
+  padding: 20px;
+  text-align: center;
+
+  .btn-payment {
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    background-color: #DADADA;
+    color: white;
+
+    &:hover {
+      color: white !important;
+    }
+  }
+}

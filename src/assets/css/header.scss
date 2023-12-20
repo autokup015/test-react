@@ -1,0 +1,30 @@
+.header {
+  max-width: 1280px;
+  margin: auto;
+  // border-bottom: 1px solid darkgray;
+
+  .detail {
+    padding: 20px;
+
+    .box-language {
+      display: flex;
+      justify-content: end;
+
+      .icon-img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .divider {
+    margin-top: 0px;
+  }
+}
