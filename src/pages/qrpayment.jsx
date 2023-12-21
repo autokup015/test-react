@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import "../assets/css/qrpayment.scss";
 import { Button } from "antd";
 
+import { useDispatch } from "react-redux";
+import { changeType } from "../typeSlice";
+
 function Qrpayment() {
+  const dispatch = useDispatch();
   // state
   const listPayment = [
     {
@@ -56,8 +60,7 @@ function Qrpayment() {
   ];
 
   useEffect(() => {
-    let date = new Date();
-    console.log("date :>> ", date);
+    dispatch(changeType("qrpayment"));
   }, []);
 
   return (
@@ -68,7 +71,7 @@ function Qrpayment() {
             <div
               className="hexagon-img"
               style={{
-                backgroundImage: `url("https://i.pinimg.com/474x/00/24/29/002429e4b28532ce5273cafa10be61c2.jpg")`,
+                backgroundImage: `url("https://chillpay-prod-frontendfiles.s3.ap-southeast-1.amazonaws.com/assets/img/banner_logo_ChillPay_banner.png")`,
               }}
             ></div>
           </div>

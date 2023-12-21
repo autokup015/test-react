@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/detail.scss";
 import { Checkbox, Col, Input, Row } from "antd";
+import { useDispatch } from "react-redux";
+import { changeType } from "../typeSlice";
 
 function Detail() {
+  const dispatch = useDispatch();
   // state
   const listMenu = [
     {
@@ -74,6 +77,10 @@ function Detail() {
       img: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ttb_bank_logo2.png",
     },
   ];
+
+  useEffect(() => {
+    dispatch(changeType("detail"));
+  }, []);
 
   const [channel, setChannel] = useState(4);
   const [bank, setBank] = useState(0);

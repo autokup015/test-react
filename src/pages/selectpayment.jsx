@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/css/selectpayment.scss";
 
 import { Button, Col, Row, Select } from "antd";
 import { RightOutlined } from "@ant-design/icons";
+import { useDispatch } from "react-redux";
+import { changeType } from "../typeSlice";
 
 function Selectpayment() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   // state
@@ -112,6 +115,10 @@ function Selectpayment() {
       ],
     },
   ];
+
+  useEffect(() => {
+    dispatch(changeType("selectpayment"));
+  }, []);
 
   // function
   const selectChannelPayment = (obj) => {

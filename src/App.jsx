@@ -3,14 +3,19 @@ import HandleRouter from "./router/router";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import { useSelector } from "react-redux";
+
 function App() {
+  const isType = useSelector((state) => state.type.type);
+
   return (
     <>
-      <Header />
+      {isType != "qrpayment" && <Header isType={isType} />}
+
       <div className="g-container">
         <HandleRouter />
       </div>
-      <Footer />
+      {isType != "qrpayment" && <Footer isType={isType} />}
     </>
   );
 }

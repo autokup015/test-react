@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 import "../assets/css/footer.scss";
 
-function Footer() {
+function Footer({ isType }) {
   return (
     <>
       <div className="footer">
