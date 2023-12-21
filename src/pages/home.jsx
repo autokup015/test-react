@@ -19,11 +19,24 @@ function Home() {
 
   return (
     <>
-      <Button onClick={() => handleRouter("detail")}>Go detail</Button>
-      <Button onClick={() => handleRouter("selectpayment")}>
+      <Button
+        style={{ marginRight: "5px" }}
+        onClick={() => handleRouter("detail")}
+      >
+        Go detail
+      </Button>
+      <Button
+        style={{ marginRight: "5px" }}
+        onClick={() => handleRouter("selectpayment")}
+      >
         Go selectpayment
       </Button>
-      <Button onClick={() => handleRouter("qrpayment")}>Go qrpayment</Button>
+      <Button
+        style={{ marginRight: "5px" }}
+        onClick={() => handleRouter("qrpayment")}
+      >
+        Go qrpayment
+      </Button>
     </>
   );
 }

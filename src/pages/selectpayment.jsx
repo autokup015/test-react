@@ -6,6 +6,7 @@ import { Button, Col, Row, Select } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
 import { changeType } from "../typeSlice";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Selectpayment() {
   const dispatch = useDispatch();
@@ -19,42 +20,42 @@ function Selectpayment() {
     {
       id: 1,
       type: "Credit & Debit Card",
-      img: "",
+      img: "fa-solid fa-credit-card",
     },
     {
       id: 2,
       type: "Pay With Points",
-      img: "",
+      img: "fa-brands fa-product-hunt",
     },
     {
       id: 3,
       type: "Mobile Banking",
-      img: "",
+      img: "fa-solid fa-mobile-screen-button",
     },
     {
       id: 4,
       type: "Internet Banking",
-      img: "",
+      img: "fa-solid fa-landmark",
     },
     {
       id: 5,
       type: "QR PromptPay",
-      img: "",
+      img: "fa-solid fa-qrcode",
     },
     {
       id: 6,
       type: "Bill Payment",
-      img: "",
+      img: "fa-solid fa-cash-register",
     },
     {
       id: 7,
       type: "e-Wallet",
-      img: "",
+      img: "fa-solid fa-wallet",
     },
     {
       id: 8,
       type: "Kiosk Machine",
-      img: "",
+      img: "fa-solid fa-wine-glass",
     },
   ];
 
@@ -177,13 +178,7 @@ export const BoxMenu = ({ data, channel, selectChannelPayment }) => {
     <div className="box-menu" onClick={() => selectChannelPayment(data)}>
       <div className={`list-menu ${data.id == channel && "active"}`}>
         <div className="detail-menu">
-          <img
-            className="icon-menu"
-            width={20}
-            height={20}
-            src="https://cdn-icons-png.flaticon.com/512/62/62780.png"
-            alt=""
-          />
+          <FontAwesomeIcon className="icon-menu" icon={data.img} />
           <p className="type-menu">{data.type}</p>
         </div>
         <RightOutlined style={{ fontSize: "18px" }} />

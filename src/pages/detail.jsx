@@ -3,6 +3,7 @@ import "../assets/css/detail.scss";
 import { Checkbox, Col, Input, Row } from "antd";
 import { useDispatch } from "react-redux";
 import { changeType } from "../typeSlice";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Detail() {
   const dispatch = useDispatch();
@@ -11,42 +12,42 @@ function Detail() {
     {
       id: 1,
       type: "Credit & Debit Card",
-      img: "",
+      img: "fa-solid fa-credit-card",
     },
     {
       id: 2,
       type: "Pay With Points",
-      img: "",
+      img: "fa-brands fa-product-hunt",
     },
     {
       id: 3,
       type: "Mobile Banking",
-      img: "",
+      img: "fa-solid fa-mobile-screen-button",
     },
     {
       id: 4,
       type: "Internet Banking",
-      img: "",
+      img: "fa-solid fa-landmark",
     },
     {
       id: 5,
       type: "QR PromptPay",
-      img: "",
+      img: "fa-solid fa-qrcode",
     },
     {
       id: 6,
       type: "Bill Payment",
-      img: "",
+      img: "fa-solid fa-cash-register",
     },
     {
       id: 7,
       type: "e-Wallet",
-      img: "",
+      img: "fa-solid fa-wallet",
     },
     {
       id: 8,
       type: "Kiosk Machine",
-      img: "",
+      img: "fa-solid fa-wine-glass",
     },
   ];
 
@@ -116,13 +117,7 @@ function Detail() {
                       key={x.id}
                       onClick={() => selectChannelPayment(x)}
                     >
-                      <img
-                        className="icon-menu"
-                        width={20}
-                        height={20}
-                        src="https://cdn-icons-png.flaticon.com/512/62/62780.png"
-                        alt=""
-                      />
+                      <FontAwesomeIcon className="icon-menu" icon={x.img} />
                       <p
                         className={`g-text type-menu ${x.id == channel && ""}`}
                       >

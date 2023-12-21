@@ -4,6 +4,7 @@ import { Col, Divider, Row } from "antd";
 
 import Th from "../assets/img/th.png";
 import En from "../assets/img/en.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header({ isType }) {
   // state
@@ -38,6 +39,7 @@ function Header({ isType }) {
                 <h2>Welcome</h2>
               </div>
             )}
+
             {isType == "selectpayment" && (
               <div className="box-detail">
                 <h2>Select Payment Channel</h2>
@@ -53,12 +55,18 @@ function Header({ isType }) {
                   <h3>Praln Fintech</h3>
                   <div className="contact">
                     <div className="phone">
-                      <p className="icon">icon</p>
+                      <FontAwesomeIcon
+                        className="icon"
+                        icon="fa-solid fa-square-phone-flip"
+                      />
                       <p>021077788-1</p>
                     </div>
                     <div className="phone">
-                      <p className="icon">icon</p>
-                      <p>021077788-1</p>
+                      <FontAwesomeIcon
+                        className="icon"
+                        icon="fa-solid fa-square-envelope"
+                      />
+                      <p>napak@prainfintech.com</p>
                     </div>
                   </div>
                 </div>

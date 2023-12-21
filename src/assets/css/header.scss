@@ -20,13 +20,15 @@
         display: flex;
         margin-top: 5px;
 
-        .icon {
-          margin-right: 5px;
-        }
-
         .phone {
-          margin-right: 10px;
           display: flex;
+          align-items: center;
+          margin-right: 10px;
+
+          .icon {
+            margin-right: 5px;
+            min-width: 15px;
+          }
         }
       }
     }
