@@ -19,14 +19,12 @@
         background-position: center;
         background-size: contain;
         clip-path: polygon(
-          30% 0%,
-          70% 0%,
-          100% 30%,
-          100% 70%,
-          70% 100%,
-          30% 100%,
-          0% 70%,
-          0% 30%
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
         );
       }
 
@@ -45,7 +43,7 @@
       margin: auto;
 
       .text-time {
-        color: #36B7E6;
+        color: #36b7e6;
       }
     }
 
@@ -82,7 +80,7 @@
         padding: 10px 0px;
         max-width: 300px;
         color: white;
-        background-color: #2D315B;
+        background-color: #2d315b;
         border: none;
       }
     }

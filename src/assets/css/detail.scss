@@ -1,6 +1,6 @@
 .detail {
   .border-right {
-    border-right: 1px solid #E5E5E5;
+    border-right: 1px solid #e5e5e5;
   }
 
   .border-shot {
@@ -14,7 +14,7 @@
   }
 
   .detail-data {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 20px;
 
     .box-menu {
@@ -27,7 +27,7 @@
         color: #406aa8;
       }
 
-      .icon-menu{
+      .icon-menu {
         min-width: 30px;
       }
 
@@ -39,7 +39,7 @@
     .box-bank {
       display: flex;
       align-items: center;
-      border: 2px solid #E5E5E5;
+      border: 2px solid #e5e5e5;
       border-radius: 8px;
       padding: 10px;
       cursor: pointer;
@@ -62,14 +62,12 @@
         background-position: center;
         background-size: contain;
         clip-path: polygon(
-          30% 0%,
-          70% 0%,
-          100% 30%,
-          100% 70%,
-          70% 100%,
-          30% 100%,
-          0% 70%,
-          0% 30%
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
         );
       }
 
